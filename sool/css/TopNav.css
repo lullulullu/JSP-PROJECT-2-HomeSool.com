@@ -1,0 +1,131 @@
+:root {
+    --text-color: white;
+    --backgrount-color: #263343;
+    --accent-color: #d49466;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgrount-color);
+    padding: 8px 12px; /*위아래, 양 옆 스페이싱*/
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: var(--text-color)
+}
+
+.navbar_logo i {
+    color: var(--accent-color);
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0; /*메뉴 앞 스페이싱 없애기*/
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+    background-color:var(--accent-color);
+    border-radius: 4px;
+ }
+
+ .navbar_usermenu {
+ 	font-size: 10px;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_usermenu li {
+    padding: 8px 12px;
+}
+
+.navbar_usermenu li:hover {
+    background-color:var(--accent-color);
+    border-radius: 4px;
+ }
+
+.navbar_icons {
+    list-style-type: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+
+@media screen and (max-width:768px){ /*가로 너비가 768px 이하일 때 아래 스타일 적용*/
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_usermenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_usermenu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_toggleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+
+}

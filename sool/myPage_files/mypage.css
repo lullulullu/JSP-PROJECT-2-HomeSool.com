@@ -1,0 +1,402 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tit_mypage{padding-bottom:70px;text-align:center;font-size:38px;font-weight:500;}
+
+
+.mypage_zone_tit{margin:0 0 0 0; padding:0 0 10px 0; font-size:16px;}
+.mypage_zone_tit h3{display:inline-block; font-size:16px;}
+.mypage_zone_tit h4{font-size:16px;}
+.mypage_zone_tit span{padding:0 0 0 5px; color:#777777; font-size:12px; font-weight:normal;}
+.mypage_shipping .mypage_zone_tit h3{display:inline-block;}
+.mypage_shipping .mypage_zone_tit .pick_list_num{display:inline-block;}
+				
+.mypage_main_tit h3{font-size:28px;font-weight:500;}
+.mypage_main_tit h3 span{padding:0 0 0 15px; color:#666; font-size:15px; font-weight:400;}
+
+.pick_list_num{display:block; padding:20px 0 10px 0; font-size:14px;}
+.pick_list_num strong{color:#ab3e55;}
+.pick_list_day{display:block; padding:20px 0 10px 0; font-size:14px;}
+
+
+/* 동록된 게시글 없음 */
+#wrap .no_data{padding:50px 30px 50px 30px; /*border-bottom:1px solid #dbdbdb;*/ text-align:center;}
+
+
+/* 1:1 문의 조회기간 영역 */
+/* .date_check_box{  padding:20px 20px 20px 30px; border:3px solid #eeeeee;}
+.date_check_box:after{display:block; clear:both; content:"";}
+.date_check_box h3{float:left; padding:6px 15px 0 0; color:#777777; font-size:13px;}
+.date_check_list{float:left; padding:0 10px 0 0;}
+.date_check_list button{float:left; width:54px; height:31px; margin:0 0 0 -1px; color:#777777; font-size:12px; border:1px solid #d6d6d6;}
+.date_check_list button:hover,
+.date_check_list button.on{color:#ffffff; background:#aeaeae;}
+.date_check_calendar{position:relative; float:left; width:30.5%;}
+.date_check_calendar .anniversary{width:45%; background:url('../../img/member/icon_calendar.png') no-repeat right center;} */
+
+.date_check_box{  /* padding:48px 0 48px 0; background: #fdf7f1; */ padding:30px 0 30px 0; background: #f8f8f8; font-size:16px; text-align:center;}
+.date_check_box:after{display:block; clear:both; content:"";}
+.date_check_box h3{display:inline-block; line-height:50px; padding:0 15px 0 0; font-size:16px; }
+.date_check_list{display:inline-block; }
+.date_check_list button{ height:50px; padding:0 15px; color:#666666; border:0;}
+.date_check_list button:hover,
+.date_check_list button.on{position:relative;color:#ff8300; font-weight:500; }
+.date_check_list button:hover:after,
+.date_check_list button.on:after{content:'';display:inline-block;width:5px;height:5px;background: #ff8300;border-radius:50%;position:absolute;top:12px;right:10px;}
+.date_check_calendar{position:relative; display:inline-block; margin:0 10px 0 25px;}
+.date_check_calendar .anniversary{width:170px; height: 50px; padding-left:20px;border:0; background:#fff url('../../img/new/icon_calendar.png') no-repeat right center;} 
+.date_check_box .btn_date_check{ display:inline-block;width:50px; height:50px; color:#ffffff; background:#ff8300 url("../../img/new/btn_search_wt23.png") no-repeat 50% 50%; text-align:center;}
+
+
+
+
+/* 자주묻는 질문 검색 */
+.date_faq_list{display:inline-block; width:70%;}
+.date_faq_list h2{padding:0 0 10px 0;}
+.date_faq_list input[type="text"]{width:70%;}
+.date_faq_txt{display:inline-block; padding:10px 0 10px 50px; border-left:1px solid #dbdbdb;}
+.date_faq_txt strong{display:block; padding:0 0 10px 0;}
+
+.fc_delivery_finish{color:#ab3e55 !important;}/* 배송완료 */
+.fc_refund_finish{color:#ab3e55 !important;}/* 환불완료 */
+
+.mypage_main,
+.mypage_cont{padding:0 0 50px 0;}
+
+
+/* ------------- 기본 게시판 테이블 리스트  ------------- */
+.board_list_table{width:100%; margin:0 0 20px 0; border:0; border-spacing:0; border-collapse:collapse; border-top:1px solid #3c3c3c; text-align:center;}
+.board_list_table th{padding:10px 10px 10px 14px; border-bottom:1px solid #dbdbdb; background:#fbfbfb;}
+.board_list_table td{padding:13px 10px 15px 10px; border-bottom:1px solid #dbdbdb;}
+/* 게시판 이미지 */
+.board_list_table .board_img{overflow:hidden; position:relative; text-align:center; border:1px solid #ebebeb;}
+.board_list_table .board_img a{display:table-cell; height:100%; vertical-align:middle;}
+/* 게시판 제목 */
+.board_list_table .board_tit{text-align:left; vertical-align:middle;}
+.board_list_table .board_tit strong{font-weight:normal;}
+.board_list_table .board_tit strong > span{color:#ab3e55;}
+.board_list_table .board_tit.on strong{font-weight:bold;}
+.board_list_table .board_tit img{margin:0 2px 0 2px; vertical-align:middle;}
+/* 게시판 제목 답글 */
+.board_list_table .board_tit .reply{}
+.board_list_table .board_tit .reply{margin:0 0 0 15px; padding:0 0 0 20px; background:url("../../img/icon/board/icon_comment_reply.png") no-repeat 8px 4px;}
+
+
+/* ------------- 테이블 공통(텍스트 센터 기본) ------------- */
+.mypage_table_type{}
+.mypage_table_type .td_left{text-align:left;}
+.mypage_table_type table{width:100%; border:0; border-spacing:0; border-collapse:collapse; text-align:center;}
+.mypage_table_type th{padding:30px 10px 30px 10px; border-top:2px solid #222; border-bottom:1px solid #eee; font-weight:500;}
+.mypage_table_type td{height:31px; padding:30px 10px 30px 10px; border-bottom:1px solid #eee; /*border-left:1px dotted #ededed;*/}
+.mypage_table_type td > strong{ }
+.mypage_table_type .btn_down_box{}
+.mypage_table_type th .form_element{vertical-align:middle;}
+.mypage_table_type .text_info{display:block; padding:2px 0 2px 0; color:#999999; font-size:11px;}
+.mypage_table_type .coupon_price{color:#333333; font-size:14px;}
+.mypage_table_type .coupon_price b{padding:0 2px 0 0; font-size:16px;}
+.mypage_table_type .row_line td{ }
+.mypage_table_type table td.order_day_num{ /*  border-bottom:1px solid #eee; */color:#666;}/* 날짜/주문번호 */
+.mypage_table_type .btn_claim > span{display:inline-block; margin:7px 0 0 0;}
+.mypage_table_type .btn_wt_small{display:inline-block; margin:2px 0;width:90px;height:40px;line-height:38px;text-align:center;box-sizing:border-box;border:1px solid #ccc ;color:#666666;font-size:14px;}	
+.mypage_table_type .btn_wt_small.w110{width:110px;}
+.mypage_table_type .table_left .btn_wt_small{width:140px; height: 45px; line-height: 43px;}
+.mypage_table_type .btn_org_small{display:inline-block; margin:2px 0;width:90px;height:40px;line-height:38px;text-align:center;box-sizing:border-box;border:1px solid #ff8300 ;color:#fff;font-size:14px;background: #ff8300;}
+.mypage_table_type .button{}
+.mypage_table_type .td_chk .form_element label{padding:0;}
+.mypage_table_type td .subscribe_info em{color:#ff8300;}
+/* 상품 리스트 */
+/*.mypage_table_type .form_element{margin:0 0 0 20px;}
+.mypage_table_type .form_element label > .pick_add_cont{margin:0 0 0 30px;}*/
+/* 상품 리스트 이미지 + 내용 */
+.mypage_table_type .pick_add_cont{display:table; position:relative;}
+.mypage_table_type .pick_add_cont .pick_add_img{display:table-cell; width:100px; vertical-align:top;}
+.mypage_table_type .pick_add_cont .pick_add_img a{position:relative;display:block;width:100%;height:0;padding-bottom:100%;overflow:hidden;border-radius:20px;}
+.mypage_table_type .pick_add_cont .pick_add_img img{position:absolute;top:0;bottom:0;left:0;right:0;width:100%; height:auto;  vertical-align:middle;}
+.mypage_table_type .pick_add_cont .pick_add_info{display:table-cell; padding:0 0 0 20px; vertical-align:middle; word-break:break-all;}
+.mypage_table_type .pick_add_cont .pick_add_info .caution_msg1{display:block; padding:0 0 5px 0; color: #000;background: none;}
+.mypage_table_type .pick_add_cont .pick_add_info .caution_msg1 .normal_btn em{ font-size:14px;}
+.mypage_table_type .pick_add_cont .pick_add_info em{display:block; font-size:16px;}
+.mypage_table_type .pick_add_cont .pick_add_info .item_money_box{padding-bottom:10px;}
+.mypage_table_type .pick_add_cont .pick_add_info .item_money_box .per { font-size:16px;}
+.mypage_table_type .pick_add_cont .pick_add_info .item_money_box .item_price{ font-size:16px;}	
+.mypage_table_type .pick_add_cont .pick_add_info .item_money_box del{ font-size:14px;}
+.mypage_table_type .pick_add_cont .text_type_cont{display:block; padding:5px 0 3px 0; color:#888; font-size:14px;   line-height:1;}
+.mypage_table_type .pick_add_cont .pick_add_plus{display:inline-block; margin:15px 10px 0 0; padding:1px 5px 3px 5px; color:#ffffff; font-size:11px; background:#959595;}
+.mypage_table_type .order_num_link{ font-weight:bold; border-bottom:1px solid #222;}
+.mypage_table_type em + .btn_gray_list,
+.mypage_table_type strong + .btn_gray_list{margin:5px 0 0 0;}
+.mypage_table_type .exchange_add_info { background-color: #337ab7; display : inline; color: #ffffff; white-space : nowrap; font-weight : bold; line-height : 1; vertical-align: baseline; text-align : center; font-size: 11px; padding: 2px;}
+
+/* 상품 체크박스 */
+.mypage_table_type .td_chk .form_element label.check_s{padding: 0 0 0 5px;}
+.mypage_table_type .td_chk{vertical-align:top;}
+
+/* left type */
+.mypage_table_type .table_left{border-top:2px solid #222;}
+.mypage_table_type .table_left th{padding:25px 0 25px 30px; border-top:none 0; text-align:left;}
+.mypage_table_type .table_left td{height:31px; padding:25px 0 25px 0; text-align:left;}
+.mypage_table_type .table_left textarea{width:100%;}
+
+/* ------------- 상단 마이페이지 정보(회원등급, 쿠폰, 마일리지, 예치금) ------------- */
+.mypage_top_info{display:flex; justify-content: space-between; padding:50px; background:#fdf7f1;}
+.mypage_top_txt{ }
+.mypage_top_txt .grade_img{/* display:block; max-width:70px; margin:0 auto; padding:0 0 10px 0; */display:inline-block;vertical-align:middle;}
+.mypage_top_txt .grade_img img{max-width:70px;}
+.mypage_top_txt .grade_txt{}
+.mypage_top_txt .grade_txt .txt_usergroup{font-size:30px; }	 
+.mypage_top_txt .grade_txt .txt_usergroup strong, 
+.mypage_top_txt .grade_txt .txt_usergroup span{font-weight:700; } 
+.mypage_top_txt .grade_txt .btn_layer{display:block; }
+.mypage_top_txt .grade_txt .btn_layer em{padding-right:15px;color:#fd8204;font-size:18px;font-weight:500;}
+.mypage_top_txt .grade_txt .btn_layer .btn_lygrade{display:inline-block; color:#60564d; border-bottom:1px solid #60564d; font-size:14px;}
+.mypage_top_txt .grade_txt .btn_layer .btn_lygrade:after{content:'';display:inline-block; width:5px;height:5px; vertical-align:middle; margin-left:5px;border-right:1px solid #60564d;border-bottom:1px solid #60564d; 
+-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg);
+}
+.mypage_top_txt .grade_txt .benefit_link a{display:block; padding:0 20px; line-height:50px; background: #f3e7da url('../../img/new/blet_benefit_link.png') no-repeat 95% 50% ; color:#60564d;font-weight:500;border-radius:5px;}   
+.mypage_top_txt .grade_txt .benefit_link02{display:inline-block;width:240px;text-align:center; line-height:50px; background: #f3e7da ; color:#60564d;font-weight:500;border-radius:999px;}
+
+.mypage_top_wallet{ }
+.mypage_top_wallet ul{display:flex;  font-size:0; line-height:1;}
+.mypage_top_wallet ul li{width:140px;height:180px;margin-right:10px;padding:30px 0 0 25px;background: #fff; font-size:14px; box-sizing:border-box; border-radius:10px; box-shadow:0 0 3px 3px rgba(0,0,0,.1); -webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,.1); } 
+.mypage_top_wallet li em{display:block; padding:0 0 40px 0; font-weight:500; color:#666666;} 
+.mypage_top_wallet li span{display:block; font-size:24px; font-weight:700;color:#fd8204;}
+.mypage_top_wallet li strong{color:#000; }
+
+.mypage_subscribe{display:flex; justify-content: space-between; padding:23px 30px; background: #fd8204; color:#fff; font-size:16px;}  
+.mypage_subscribe p{} 
+.mypage_subscribe a{font-size:15px;font-weight:500; color:#fff;padding-left:35px;background:url('../../img/new/icon_set.png') no-repeat 0 0;}
+
+/* 진행 중인 주문 */
+.mypage_order_info_cont{  border-top:1px solid #222; border-bottom:1px solid #eee; text-align:center;}
+.mypage_order_info_cont ol{ display:flex; justify-content: center; padding:40px 0; border-bottom:1px solid #eee; }
+.mypage_order_info_cont ol li{ padding:0 25px 0 35px;  background:url('../../img/new/mypgae_ing_next_bg.png') no-repeat left 70px; text-align:center;}
+.mypage_order_info_cont ol li:first-child{padding-left:10px; background:none 0;}
+.mypage_order_info_cont ol li b{display:block; padding:0 0 15px 0; font-weight:500;}
+.mypage_order_info_cont ol li strong{display:inline-block; width:90px; height:90px; line-height:90px;  font-size:30px; font-weight:500; color:#222222; background:#eeeeee; border-radius:50%; text-align:center;vertical-align:middle;}
+.mypage_order_info_cont .active strong{background:#fd8204;color:#ffffff;}
+
+.mypage_order_info_cont .order_case_list{ padding:20px 0;}
+.mypage_order_info_cont .order_case_list ul{display:flex; justify-content: center;}
+.mypage_order_info_cont .order_case_list ul li{padding:0 35px; } 
+.mypage_order_info_cont .order_case_list ul li b{font-weight:400;}	
+.mypage_order_info_cont .order_case_list ul li b:after{content:':';}
+.mypage_order_info_cont .order_case_list ul li span{float:right;}
+.mypage_order_info_cont .order_case_list ul li span > em,
+.mypage_order_info_cont .order_case_list ul li span > strong{padding:0 3px 0 0; font-size:15px; color:#ab3e55;}
+
+
+
+/* ------------- 최근 주문 정보 ------------- */
+.mypage_lately_info{position:relative;}
+.mypage_lately_info_cont{}
+/*.mypage_lately_info_cont .mypage_table_type .td_left{padding-left:20px;}*/
+
+/* ------------- 최근 본 상품 ------------- */
+.mypage_lately_goods{margin:50px 0 0 0;}
+.mypage_lately_goods .mypage_zone_tit{margin:0 0 20px 0; border-bottom:1px solid #999999;}
+.mypage_lately_goods .goods_list_cont ul li{margin-top:10px;}
+
+/* ------------- 반품신청, 교환신청, 환불신청 ------------- */
+.mypage_claim_cont{margin:0 0 50px 0;}
+.mypage_claim_cont .mypage_table_type td strong{color:#333333;}
+/* 사유, 정보 */
+.mypage_claim_reason{margin:50px 0 0 0;}
+.mypage_claim_info{margin:50px 0 0 0;}
+/* 사유,정보 셀렉트 */
+.mypage_claim_select select{width:200px;}
+.mypage_claim_info input[type="text"]{width:200px;}
+
+
+/* ------------- 쇼핑정보 관련 페이지 탭 ------------- */
+.mypage_breakdown_tab{}
+.mypage_breakdown_tab{padding:0; border-bottom:1px solid #bbbbbb;}
+.mypage_breakdown_tab ul{float:none; width:100%; height:58px; margin:0 auto; font-size:0;}
+.mypage_breakdown_tab li{display:inline-block; position:relative; min-width:200px; font-size:12px; text-align:center; z-index:10;}
+.mypage_breakdown_tab li.on{z-index:20;}
+.mypage_breakdown_tab li a{display:block; margin:0 0 0 -1px; padding:10px 20px 12px 20px; color:#999999; font-size:13px; border:1px solid #dadada; border-bottom:1px solid #bbbbbb; background:#ffffff;}
+.mypage_breakdown_tab li.on a{padding-top:18px; margin-top:8px; color:#333333; font-weight:bold; border:1px solid #bbbbbb; border-bottom:1px solid #ffffff;}
+.mypage_breakdown_tab li.on a span{display:inline-block; position:relative; top:-3px;}
+.mypage_breakdown_tab li:first-child a{margin-left:0;}
+.mypage_breakdown_tab li a strong{color:#ab3e55;}
+
+/* ------------- 찜리스트------------- */
+.mypage_wish_list{}
+.mypage_wish_list .btn_wish_choice_del, .mypage_wish_list .btn_wish_choice_cart, .mypage_lately_info_cont .buy_order_cart_add_btn {margin:30px 0 0 0;}
+.mypage_wish_list .mypage_table_type .icon_time_sale{display:block; position:relative; margin:0 0 5px 0;}
+.mypage_wish_list .chk_none{display:block; min-height:17px; padding:5px 0 5px 19px; color:#3e3d3c; font-weight:normal; background:url('../../img/icon/etc/icon_warning.png') no-repeat left 8px;}
+/* 추가 상품 */
+.pick_add_list{margin:10px 5px 0 0; padding:2px 0 0 0; border-top:1px dotted #dbdbdb;}
+.pick_add_list .pick_add_cont{margin:6px 0 0 0;}
+.pick_add_list .pick_add_cont .pick_add_img{vertical-align:top;}
+.pick_add_list .pick_add_cont .pick_add_info em{display:inline-block; font-weight:normal;}
+.pick_add_list .pick_add_cont .pick_add_info em > a > img{margin:2px 0 0 0;}
+.pick_add_list .pick_add_cont .pick_add_info .chk_none{margin:0;}
+.cart_cont_list > table .img {float:left; border:1px solid #dbdbdb; margin:0 10px 0 0; }
+
+/* ------------- 혜택관리 > 쿠폰 ------------- */
+.benefit_list_tit{display:flex; justify-content: space-between; align-items: center;}
+.benefit_list_tit strong{font-weight:400; color:#666666;}
+.benefit_list_tit .state_tab ul{display:flex;}
+.benefit_list_tit .state_tab ul li{padding-left:40px;}
+.benefit_list_tit .state_tab a{color:#666666; font-size:18px;}
+.benefit_list_tit .state_tab .on a{color:#ff8300; border-bottom:1px solid #ff8300; font-weight:500;}
+.mypage_coupon_name{}
+.mypage_coupon_name strong{display:block; padding:5px 0 0 0; color:#333333;}
+.coupon_date_day{display:inline-block; width:130px; padding:0 0 3px 0;}/* 유효기간 */
+/* 사용전 */
+.coupon_before_use{display:inline-block; width:66px; padding:0 10px 0 10px; color:#fff; font-size:13px; border:1px solid #ff8300; text-align:center; background:#ff8300; line-height:25px;}
+.coupon_gift_before_use{display:inline-block; width:66px; padding:0 10px 0 10px; color:#ffffff; font-size:13px; border:1px solid #ff8300; background:#ff8300; text-align:center; line-height:25px; cursor:pointer }
+/* 사용완료, 장바구니사용, 주문사용, 사용만료 */
+.coupon_finish_use,
+.coupon_cart_use,
+.coupon_order_use,
+.coupon_expire_use{display:inline-block; width:66px; padding:0 10px 0 10px; color:#fff; font-size:13px; border:1px solid #666; text-align:center; line-height:25px;background: #666;}
+
+.coupon_ban li{margin-bottom:40px;}
+.coupon_ban li img{max-width:100%;}
+
+/* ------------- 혜택관리 > 예치금, 마일리지 ------------- */
+.mypage_table_type .td_cash span,
+.mypage_table_type .td_cash strong{display:inline-block; width:80px; text-align:right;}
+.mypage_table_type .td_cash .cash_minus{color:#329cff;}
+.mypage_table_type .td_cash .cash_plus{color:#3e3d3c;}
+.cash_date_day{display:inline-block; width:200px;}/* 유효기간 */
+
+/* ------------- 마이페이지 > 회원 회원정보 ------------- */
+.my_page_password{}
+.my_page_password p{ color:#666666;}
+.my_page_password .mypage_zone_tit{margin:0 0 50px 0; padding:0 0 10px 0; font-size:14px; border-bottom:1px solid #999999;}
+.my_page_password .id_pw_cont{overflow:hidden; margin:30px 0 50px 0; padding:40px 0 40px 0;  background:#f8f8f8; }
+.my_page_password .id_pw_cont dl{display:flex; align-items: center;width:495px;margin:0 auto;}
+.my_page_password .id_pw_cont dt{width:90px; font-weight:500; }
+.my_page_password .id_pw_cont dd{  font-size:14px; text-align:left;}
+.my_page_password .id_pw_cont dd strong{display:block; font-weight:400;}
+.my_page_password .id_pw_cont dd input{width:398px;}
+.my_page_password .id_pw_cont dd .text_warning{font-size:12px;}
+.my_page_password .id_pw_cont dl + dl{margin-top:30px;}
+.my_page_password .sns_cont{margin:30px 0 30px 0; padding:35px 0 35px 0; border:1px solid #dadada; background:#ffffff; text-align:center;}
+
+
+/* ------------- 마이페이지 > 내정보수정 ------------- */
+.my_page{}
+.my_page h3{font-weight:bold;}
+.my_page .mypage_zone_tit{margin:0 0 50px 0; padding:0 0 10px 0; font-size:14px; border-bottom:1px solid #3c3c3c;}
+.my_page .join_base_wrap .member_cont{width:100%; margin:0; padding:0;}
+.my_page .join_base_wrap .member_cont h3{ font-size: 28px; font-weight:500;padding:0;}
+.my_page .base_info_box.mt40{margin-top:30px;}
+.my_page .base_info_box .base_info_top{display:none;}
+/* 계정 연결 정보 */
+.site_info_box{margin:40px 0 0 0;}
+.site_sns_info{padding:50px 20px 50px 20px; text-align:center; background:#f8f8f8;}
+.site_sns_info .site_sns_list{}
+.site_sns_info .site_sns_list h4{display:inline-block; margin:0 14px 0 0; color:#777777;}
+.site_sns_info .site_sns_list em{display:block; padding:0 0 15px 0;}
+.site_sns_info .site_sns_list span{display:inline-block; margin:0 0 0 0; vertical-align:middle;}
+.site_sns_info .site_sns_list a{display:inline-block; margin:0 6px 10px 0; vertical-align:top; line-height:1;}
+.site_sns_info .site_sns_list a > span{display:block; margin:0 0 0 0; font-size:13px;}
+.site_sns_info .site_sns_list img{margin:0 0 0 0;}
+.site_sns_info .site_sns_list .my_facebook{color:#3b5998;}
+.site_sns_info .site_sns_list .my_payco{color:#fa4a4a;}
+.site_sns_info .site_sns_list .my_naver{color:#2db400;}
+.site_sns_info .site_sns_list .my_kakao{color:#381e1f;}
+.site_sns_info .site_sns_list_disconnect span{display:inline-block; margin:0 6px 0 0; vertical-align:middle;}
+.site_sns_info .site_sns_list_disconnect a{display:inline-block; width:225px; height:50px; margin:0 6px 0 0; border:1px solid #cfcfcf; background:#fff; text-align:center; vertical-align:middle; line-height:1;}
+.site_sns_info .site_sns_list_disconnect a > span{display:block; margin:16px 0 0 0; }
+.site_sns_info .site_sns_list_disconnect img{margin:0 8px 0 0;}
+/* 약관동의현황 */
+.my_page .join_agreement_cont{margin:40px 0 0 0;}
+.my_page .join_agreement_cont h3{margin:0 0 10px 0;}
+
+/* ------------- 마이페이지 > 회원탈퇴 ------------- */
+.hack_out {margin:0 0 50px 0;}
+.hack_out .mypage_zone_tit{/* margin:0 0 50px 0; padding:0 0 10px 0; font-size:14px; border-bottom:1px solid #999999; */}
+.hack_out h3{font-weight:500;font-size:16px;}
+.hack_out .mypage_unregister .mypage_zone_tit{margin:0; padding:0 0 10px 0; font-size:14px; border-bottom:none 0;}
+.hack_out .mypage_unregister .unregister_info{  padding:40px; color:#666666; background: #f8f8f8;}
+.hack_out .mypage_unregister .unregister_info .btn_icn{line-height:45px;width:200px;}
+.hack_out .mypage_unregister input[type="password"]	{width:270px;}
+.hack_out .mypage_unregister .hack_out_list li{float:left; width:40%; padding:10px 0;}
+.hack_out .mypage_unregister textarea{width:98%; height:100px;}
+
+/* ------------- 마이페이지 > 배송지 관리 ------------- */
+.mypage_shipping{position:relative;}
+.mypage_shipping .tit_28{line-height:50px;}
+.mypage_shipping_cont{position:relative;}
+.mypage_shipping_cont .pick_list_num{position:absolute; top:-50px; left:92px; font-size:13px;}
+.mypage_shipping_cont .mypage_table_type span{/* display:block; */}
+.mypage_shipping_cont .mypage_table_type .post_code{color:#888;}
+.mypage_shipping_cont .mypage_table_type .icon_defalt{display:inline-block;text-align:center; margin-top:5px; width:90px; line-height:32px;color:#ed1c24;border:1px solid #ed1c24;border-radius:999px;font-size:13px;} 
+.mypage_shipping_cont .mypage_table_type .btn_gray_list{margin:5px 0 5px 0;}
+.mypage_table_type .td_phone span{width:150px;}
+.mypage_shipping .mypage_table_type .s_tit > span{display:inline-block;margin-right:5px;width:100px;line-height:32px;border-radius:999px;text-align:center;font-size:13px;box-sizing:border-box;}	
+.mypage_table_type .s_tit .orange{background: #fd8204;color:#fff;}
+.mypage_table_type .s_tit .sky{border:1px solid #222222;color:#222222;}
+.mypage_table_type .s_tit .black{background: #aaaaaa;color:#fff;}
+.mypage_table_type .shipping_time{position:relative;padding:10px 0 25px 35px;font-size:13px;}
+.mypage_table_type .shipping_time:before{position:absolute;top:12px;left:14px;content:'';display:inline-block;width:10px;height:10px;border-bottom:1px dotted #888888; border-left:1px dotted #888888;}
+.mypage_table_type .shipping_time span{display:inline ; }
+.mypage_table_type .shipping_time .orange{color:#fd8204;}	  
+.mypage_table_type .shipping_time .sky{color:#2ea4d7;}
+
+
+/* ------------- 마이페이지 > 주문 상세 ------------- */
+.order_num_view{padding:0 0 0 10px; color:#fd8204; font-size:16px;font-weight:400;}
+.order_view_info{} 
+.order_view_info .total_pay_money{/* font-size:20px; */}
+/* 결제 정보 */
+.payment_info{}
+.payment_info .btn_layer{display:block; margin-top:5px;}
+/* 할인헤택 */
+.discount_benefit{}
+.discount_benefit dl{float:left; width:100%; margin:5px 0 0 0;}
+.discount_benefit dt{float:left; width:60px;}
+.discount_benefit dd{float:left; width:75px; text-align:right;}
+/* 결제수단 */
+.pay_with_list{color:#333333;}
+.pay_with_list > strong{display:block; font-weight:400;}
+.pay_with_list ul{margin:5px 0 0 0;}
+.pay_with_list ul li{position:relative;padding:2px 0 2px 15px;}
+.pay_with_list ul li:before{ position: absolute; top:10px; left: 0; content: '';	display: inline-block; width: 5px; height: 5px;	background: #ff8300; border-radius: 50%;}
+.pay_with_list .deposit_money{}
+.paymentdate_list ul li{position:relative;padding:2px 0 2px 15px;} 
+.paymentdate_list ul li:before{ position: absolute; top:10px; left: 0; content: '';	display: inline-block; width: 5px; height: 5px;	background: #ff8300; border-radius: 50%;}
+/* 적립 마일리지 */
+.saving_mileage{overflow:hidden; color:#333333;}
+.saving_mileage > strong{display:block; font-weight:400;}											  
+.saving_mileage dl{float:left; width:100%; margin:5px 0 0 0;position:relative;padding:0 0 0 15px;box-sizing:border-box;}
+.saving_mileage dl:before{ position: absolute; top:10px; left: 0; content: '';	display: inline-block; width: 5px; height: 5px;	background: #ff8300; border-radius: 50%;}
+.saving_mileage dt{float:left; width:90px;}
+.saving_mileage dd{float:left; width:75px; text-align:right;}
+/* 세금계산서 */
+.admin_text{padding:5px 0 0 0;}
+
+/* 마이페이지 - 배송방식 상태 확인 레이어 */
+.delivery-method-layer {
+    position: relative;
+    width: 500px;
+    min-height: 300px;
+    background: #fff;
+}
+.delivery-method-layer .wrap {
+    position: relative;
+    min-height: 296px;
+    padding: 0 0 0 20px;
+    border: 2px solid #555;
+}
+.delivery-method-layer .wrap h4 {
+    margin: 0 17px 0 0;
+    padding: 14px 0;
+    border-bottom: 1px solid #717171;
+    color: #000;
+    font-size: 18px;
+}
+.delivery-method-layer .delivery-method-layer-table { margin: 0 17px 0 0; }
+.delivery-method-layer .delivery-method-layer-table table { border-top: 1px solid #dbdbdb !important; }
+.delivery-method-layer .delivery-method-layer-table table tr th { border-top: 0px; }
+
+.mystamp{display:flex; justify-content: space-between; align-items: center; background:#f3e7da; padding: 15px 30px; line-height:30px; font-size:16px; } 
+.mystamp ul{display:flex; }		  
+.mystamp ul li{padding-right:20px;}					 
+.mystamp ul li em{font-weight:500;}
+.mystamp ul li strong{font-size:21px; color:#fd8204;} 
+.mystamp a{display:inline-block; padding-right:27px; background:url('../../img/new/blet_mystamp.png') no-repeat right 50%;} 

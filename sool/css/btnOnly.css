@@ -1,0 +1,42 @@
+.parent{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.first {
+    border: 1px solid red;
+    flex:1;
+    width:30%;
+    box-sizing: border-box;
+}
+
+.second{
+    border: 1px solid green;
+    flex:1;
+    margin: 0px 5%;
+    width:30%;
+    box-sizing: border-box;
+}
+
+.third{
+    border: 1px solid blue;
+    flex:1;
+    width:30%;
+    box-sizing: border-box;
+}
+
+.inGridBtns { 
+	display:inline-block; /* inline-block이어야 자식객체의 내용에 따라 가변적인 크기를 가질 수 있다. */
+	cursor:pointer; 
+	height: 16px /* 버튼의 height의 근사치로 입력해야 버튼에 fit되어 수직 가운데 정렬이 된다. */
+}
+
+/* IE7(호환성보기)에서 inline-block이 작동하지 않으므로 hack을 사용하여 inline-block 구현 */ 
+*:first-child+html .inGridBtns{
+	display:inline; zoom:1
+}
+
+.inGridBtns div{
+	float:left /* block 속성 엘리먼트의 정렬은 float를 사용한다. */
+}
